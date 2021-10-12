@@ -1,0 +1,390 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button{
+  background: rgb(240, 240, 240);
+}
+
+.hidden{
+  display: none;
+}
+
+.nextLevel{
+  width: 604px;
+  margin: auto;
+}
+
+.btnNextLevel{
+  margin-top: 15px;
+  float: right;
+  height: 30px;
+  width: 100px;
+}
+
+.openLevel{
+  margin: 10px auto;
+  background: rgb(220, 220, 220);
+  border: 4px dotted black;
+  border-radius: 25px;
+  width:75%;
+  height:100%;
+}
+.openLevel div{
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+.openLevel h1{
+    text-align: center;
+    font-size: 46px;
+    margin-top: 20px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+.openLevel button{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.showLevels{
+  margin: auto;
+  margin-top: 15px;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: rgb(240, 240, 240);
+  width: 1339px;
+  height: 100%;
+}
+
+.levelOverview{
+  background: rgb(185, 185, 185);
+  width: 161px;
+  border: 2px solid black;
+  margin: 2px;
+  float: left;
+  text-align: center;
+}
+.levelOverview h1{
+  font-size: 20px;
+}
+.levelOverview h3{
+  font-size: 14px;
+}
+.levelOverview i{
+  font-size: 12px;
+}
+.levelOverview .levelOButtons{
+  width: 95%;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.levelOverview .levelOButtons button{
+  width: 100%;
+  padding: 2px;
+}
+
+.showUsers{
+  margin: auto;
+  margin-top: 15px;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: rgb(240, 240, 240);
+  width: 1339px;
+  height: 100%;
+}
+
+.userOverview{
+  background: rgb(185, 185, 185);
+  width: 161px;
+  border: 2px solid black;
+  margin: 2px;
+  float: left;
+  text-align: center;
+}
+.userOverview h3{
+  font-size: 20px;
+}
+.userOverview p{
+  font-size: 12px;
+}
+.userOverview .userOButtons{
+  width: 95%;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.userOverview .userOButtons button{
+  width: 100%;
+  padding: 2px;
+}
+
+.main{
+  position: fixed;
+  width:100%;
+  height:100%;
+}
+.main .buttons{
+  margin: auto;
+  width: 50%;
+}
+.main .buttons button{
+  width: 100%;
+  height: 70px;
+  font-size: 24px;
+  margin-top: 10px;
+  display: block;
+  border-radius: 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.main .changePlayer{
+  position: relative;
+  background: rgb(240, 240, 240);
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+.main .changePlayer h1{
+  background: lightgreen;
+  padding: 3px;
+  width: 100%;
+  text-align: center;
+}
+.main .changePlayer form{
+  margin: auto;
+  width: 35%;
+  background: white;
+}
+.main .changePlayer form input{
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+.main .changePlayer input[type="file"]{
+  border: 1px solid black;
+
+}
+
+
+.main .addForm{
+  position: relative;
+  background: rgb(240, 240, 240);
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+/*.main .addForm form{
+  margin: auto;
+}*/
+.main .addForm h1{
+  background: lightgreen;
+  padding: 3px;
+  width: 100%;
+  text-align: center;
+}
+.main .addForm form{
+  margin: auto;
+  width: 35%;
+  background: white;
+}
+.main .addForm form input{
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+.main .addForm input[type="file"]{
+  border: 1px solid black;
+
+}
+
+
+.alert {
+  position: absolute;
+  right: 0; 
+  transition: opacity 0.6s;
+  padding: 20px;
+  background: rgb(22, 218, 22);
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+  
+}
+
+
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+/*Header*/
+.topPage{
+  background-color: lightgreen;
+  padding: 5px;
+  height: 60px;
+  display: grid;
+  grid-template-areas:
+    'div div';
+}
+.topPage div{
+  float: right;
+  margin: 5px;
+  grid-area: div;
+}
+.topPage .logOut{
+  display: none;
+  position: relative;
+}
+.topPage .logOut button{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0%;
+}
+.topPage input, .topPage button{
+  padding: 5px;
+  border-radius: 5px;
+}
+.topPage button{
+  width: 80px;
+}
+.topPage input{
+  width: 200px;
+}
+
+/*End Header*/
+
+
+
+
+
+
+.player img{
+  max-width: 525px;
+  max-height: 525px;
+  display: block;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.player{
+  padding-top: 20px;
+  width: 700px;
+  height: 100%;
+  margin: auto;
+  background-image: url("/backgroundImages/Blue_Background.png");
+}
+
+.player .letters button{
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.player .letters button:hover{
+  cursor: pointer;
+  background: rgb(220, 220, 220);
+  color: black;
+  border: 1px solid black;
+}
+
+.player .letters button:disabled, .player .letters button[disabled]{
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.backArrow {
+  position: fixed;
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+  float: left;
+  font-size: 60px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-text-stroke: 1px black;
+}
+
+.letters{
+  width: 610px;
+  margin: auto;
+}
+
+.btnLetter{
+  bottom: 20px;
+  margin: 1px;
+  width: 70px;
+  height: 70px;
+  font-size: 22px;
+}
+
+#correct{
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: none;
+}
+
+.player #name{
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  min-height: 36px;
+  background: white;
+}
+
+.btnLetterRemove{
+  width: 100%;
+  height: 40px;
+  margin-top: 3px; 
+  font-size: 14px;
+}

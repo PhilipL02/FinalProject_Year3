@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slutprojekt</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topPage">
+      <div style="display: none" class="divRegLog">
+        <div class="register">
+          <form action="" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button>Register</button>
+          </form>
+        </div>
+        <div class="login">
+          <form action="" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button>Login</button>
+          </form>
+        </div>
+      </div>
+      <div class="logOut">
+        <button onclick="logOut()">Log Out</button>
+      </div>
+    </header>
+    <hr>
+    <div style="display: none" class="main">
+      <div class="buttons"></div>
+      <div class="addForm" style="display: none">
+        <h1>Add player</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Name" required><br>
+          <input type="number" name="level" placeholder="Level" required><br>
+          <input type="file" name="image" accept="image/jpeg" required><br>
+          <input type="submit" value="Add">
+        </form>
+      </div>
+      <div class="changePlayer" style="display: none">
+        <h1>Change Player</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+          <input type="text" id="playerName" name="name" placeholder="Name" required><br>
+          <input type="number" id="level" name="level" placeholder="Level" required><br>
+          <input type="file" id="UpdPlaimage" name="image" accept="image/jpeg" required><br>
+          <input type="submit" value="Save">
+        </form>
+      </div>
+      <div style="display: none" class="openLevel">
+        <h1>CHOOSE LEVEL</h1>
+        <span class="backArrow" onclick="leaveLevel()">&larr;</span>
+        <br>
+        <div></div>
+      </div>
+      <div class="showLevels" style="display: none"></div>
+      <div style="display: none" class="player">
+        <span class="backArrow" onclick="leaveLevel()">&larr;</span>
+        <img id="playerImg" src="" alt="">
+        <div class="letters">
+          <p class="level_toGetName" hidden>1</p>
+          <p id="name"></p>           
+          <button onclick="newLetter(), check()" value="1" class="btnLetter" id="btn1">1</button>
+          <button onclick="newLetter(), check()" value="2" class="btnLetter" id="btn2">2</button>
+          <button onclick="newLetter(), check()" value="3" class="btnLetter" id="btn3">3</button>
+          <button onclick="newLetter(), check()" value="4" class="btnLetter" id="btn4">4</button>
+          <button onclick="newLetter(), check()" value="5" class="btnLetter" id="btn5">5</button>
+          <button onclick="newLetter(), check()" value="6" class="btnLetter" id="btn6">6</button>
+          <button onclick="newLetter(), check()" value="7" class="btnLetter" id="btn7">7</button>
+          <button onclick="newLetter(), check()" value="8" class="btnLetter" id="btn8">8</button>
+          <br>
+          <button onclick="newLetter(), check()" value="9" class="btnLetter" id="btn9">9</button>
+          <button onclick="newLetter(), check()" value="10" class="btnLetter" id="btn10">10</button>
+          <button onclick="newLetter(), check()" value="11" class="btnLetter" id="btn11">11</button>
+          <button onclick="newLetter(), check()" value="12" class="btnLetter" id="btn12">12</button>
+          <button onclick="newLetter(), check()" value="13" class="btnLetter" id="btn13">13</button>
+          <button onclick="newLetter(), check()" value="14" class="btnLetter" id="btn14">14</button>
+          <button onclick="newLetter(), check()" value="15" class="btnLetter" id="btn15">15</button>
+          <button onclick="newLetter(), check()" value="16" class="btnLetter" id="btn16">16</button>
+          <button onclick="removeLastCharacter()" class="btnLetterRemove">Back</button>
+        </div>
+        <div class="nextLevel"></div>
+      </div>
+      <div class="showUsers" style="display: none"></div>
+    </div>
+    <div class="alert" style="display: none">
+      <span class="closebtn" onclick="closebtnClick()">&times;</span> 
+      <strong></strong>
+    </div>
+  </body>
+</html>
